@@ -10,6 +10,4 @@ mvn verify -Dcucumber.filter.tags="@smoke"
 # How to run all test by using default env and browser
 mvn verify
 
-mvn verify 
-
 

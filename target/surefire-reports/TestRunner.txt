@@ -1,24 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.412 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["Create a new account", "Optional[Registration]"](1)  Time elapsed: 1.338 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Caused by: org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to start.
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'Tonnies-MBP', ip: 'fe80:0:0:0:1438:b030:e287:f780%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '19'
-Driver info: driver.version: SafariDriver
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'Tonnies-MBP', ip: 'fe80:0:0:0:1438:b030:e287:f780%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '19'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.WebDriverException: 
-java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'Tonnies-MBP', ip: 'fe80:0:0:0:1438:b030:e287:f780%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '19'
-Driver info: driver.version: unknown
-Caused by: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Caused by: java.net.SocketException: Invalid argument
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.178 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Create a new account", "Optional[Registration]"](1)  Time elapsed: 15.327 s  <<< FAILURE!
+io.cucumber.core.exception.CucumberException: 
+Step [I enter valid First Name] is defined with 1 parameters at 'stepDef.register_stepDef.iEnterValidFirstName(java.lang.String)'.
+However, the gherkin step has 0 arguments.
+Step text: I enter valid First Name
 
