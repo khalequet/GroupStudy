@@ -27,7 +27,20 @@ public class register_page extends Config {
     @FindBy (how = How.XPATH,using = "//input[@name='firstName']")
     public WebElement firstNameLocator;
 
+    @FindBy (how = How.XPATH, using = "//input[@aria-describedby='lastname-error-text']")
+    public WebElement lastNameLocator;
 
+    @FindBy(how = How.ID, using = "wag-email")
+    public WebElement emailLocator;
+
+    @FindBy(how =How.XPATH, using = "//input[@id ='wag-password']")
+    public WebElement passwordLocator;
+
+    @FindBy(how =How.XPATH, using = "//input[@id = 'wag-terms-checkbox']")
+    public WebElement agreetotermsLocator;
+
+    @FindBy (how =How.XPATH, using = "//a[@id='wag-rxuser-continue-btm']")
+    public WebElement continuebuttonLocator;
 
 
 
@@ -47,16 +60,26 @@ public class register_page extends Config {
     public void clickRegister (){
         registerLocator.click();
     }
-    public void enterfirstName (String firstname){
-        firstNameLocator.sendKeys("Jenny");
+    public void enterfirstName (){
+        firstNameLocator.sendKeys( "Jenny");
+    }
+    public void enterlastName (){
+        lastNameLocator.sendKeys( "Ahmed");
+    }
+    public void enterEmail (){
+    emailLocator.sendKeys("jennyahmed12@gmail.com");
+    }
+    public void enterPassword (){
+       passwordLocator.sendKeys("Jenny12!");
     }
 
+    public void clickagreetoterms (){
+        agreetotermsLocator.click();
+    }
 
-
-
-
-
-
+    public void clickoncontinuebutton (){
+        continuebuttonLocator.click();
+    }
 
 
 

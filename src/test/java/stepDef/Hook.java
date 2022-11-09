@@ -25,6 +25,7 @@ public void startTest(){
     switch (envType){
         case "qa":
             url = "https://www.walgreens.com/";
+
             break;
     }
     driver.get(url);

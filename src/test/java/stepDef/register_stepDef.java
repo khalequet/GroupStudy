@@ -25,33 +25,42 @@ public class register_stepDef extends Config {
         RP.clickRegister();
     }
 
+//    @And("I enter valid First Name")
+//    public void iEnterValidFirstName(String firstname) {
+//       RP.enterfirstName(firstname);
+//    }
     @And("I enter valid First Name")
-    public void iEnterValidFirstName(String firstname) {
-       RP.enterfirstName(firstname);
+    public void iEnterValidFirstName() {
+        RP.enterfirstName();
     }
-
 
     @And("I enter valid Last Name")
     public void iEnterValidLastName() {
+        RP.enterlastName();
     }
 
     @And("I enter valid Email Address")
     public void iEnterValidEmailAddress() {
+    RP.enterEmail();
     }
 
     @And("I enter valid Password")
     public void iEnterValidPassword() {
+        RP.enterPassword();
     }
 
     @And("I click on I read and agree to the Walgreens terms of use")
     public void iClickOnIReadAndAgreeToTheWalgreensTermsOfUse() {
+        RP.clickagreetoterms();
     }
 
     @When("I click on continue button")
     public void iClickOnContinueButton() {
+    RP.clickoncontinuebutton();
     }
 
     @Then("I should be able to create an account")
     public void iShouldBeAbleToCreateAnAccount() {
+
     }
 }

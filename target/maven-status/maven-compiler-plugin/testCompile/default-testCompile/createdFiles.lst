@@ -1,3 +1,4 @@
+base/GenericFunctions.class
 stepDef/Hook.class
 stepDef/register_stepDef.class
 pageObject/register_page.class
